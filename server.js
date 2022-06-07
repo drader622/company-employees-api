@@ -38,6 +38,6 @@ app.get('/api/:id', (req, res) => {
 });
 
 
-app.listen(PORT, (req, res) => {
+app.listen(process.env.PORT || PORT, (req, res) => {
     console.log(`Running on port ${PORT}`)
 });
